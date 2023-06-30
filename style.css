@@ -8,18 +8,23 @@
 }
 
 html {
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
+}
+
+button:hover {
+  opacity: .5;
+  /* transition: all ease-in-out 20s; */
 }
 
 body {
   font-size: 18px;
   max-width: 1440px;
   background-color: ;
+  /* position: relative; */
 }
 
 header {
-  margin: 2em 6em;
-  font-weight: 700;
+  margin: 2em 6em 6em 6em;
 }
 
 header .logo {
@@ -49,6 +54,10 @@ header nav ul li a {
   color: hsl(257, 7%, 63%);
 }
 
+header nav ul li a:hover {
+  color: hsl(260, 8%, 14%);
+}
+
 header .login {
   display: flex;
   align-items: center;
@@ -69,8 +78,7 @@ header button {
   cursor: pointer;
 }
 
-header .right-side-image {
-  /* margin-left: -7em; */
+header .right-side-image img {
 }
 
 header .intro {
@@ -110,11 +118,180 @@ header .intro button {
 }
 
 .shorten {
-  /* margin-top: 3em; */
-  margin: 3em 6em;
-
+  margin: 0 0 6em 6em;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 85%;
 }
 
 .shorten input {
+  min-height: 2em;
+  margin: 3em 0 3em 3em;
+  padding: .8em;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  font-weight: bold;
+  color: hsl(0, 0%, 75%);
 }
+
+.shorten input:focus {
+  outline: hsl(0, 87%, 67%);
+}
+
+.shorten button {
+  width: 12%;
+  margin-left: .6em;
+  padding: .8em;
+  border-radius: 5px;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.statistics {
+  background-color: hsl(0, 0%, 90%);
+  padding: 8em 6em 10em;
+}
+
+.statistics .intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.statistics .intro h1 {
+  color: hsl(255, 11%, 22%);
+  font-weight: 900;
+  margin-bottom: .5em;
+}
+
+.statistics .intro p {
+  color: hsl(257, 7%, 63%);
+  line-height: 1.4;
+  /* margin-bottom: 2em; */
+}
+
+.statistics .adverts {
+  display: flex;
+  /* align-items: center; */
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.statistics .brand {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  line-height: 1.4;
+}
+
+.statistics img {
+  position: absolute;
+  transform: translateY(-70%);
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.statistics h4 {
+  margin-top: 2.5em;
+  color: hsl(257, 27%, 26%);
+  margin-bottom: 1em;
+}
+
+.statistics p {
+  color: hsl(257, 7%, 63%);
+  /* font-size: 16px; */
+}
+
+.statistics hr {
+
+}
+
+.statistics .adverts .two {
+  transform: translateY(40px);
+}
+
+.statistics .adverts .third {
+  transform: translateY(80px);
+}
+
+.boost {
+  text-align: center;
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  padding: 2.5em 0;
+}
+
+.boost h1 {
+  color: #ffffff;
+  margin-bottom: .7em;
+}
+
+.boost button {
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 100px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+footer {
+  padding: 3em 6em;
+  background-color: hsl(260, 8%, 14%);
+  display: flex;
+  gap: 250px;
+}
+
+footer .nav-link {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 90px;
+}
+
+footer h4 {
+  color: #ffffff;
+  padding-bottom: 0.5em;
+}
+
+footer .socials ul {
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+  padding-top: 1em;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+}
+
+footer ul li a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+footer .socials ul a {
+  padding-left: 1em;
+  text-decoration: none;
+}
+
+footer .socials ul li a :hover {
+  background-color: hsl(180, 66%, 49%);
+  /* border-radius: 50%; */
+
+  /* background-color: red; */
+}
+
 

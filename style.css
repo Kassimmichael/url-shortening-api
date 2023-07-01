@@ -13,18 +13,20 @@ html {
 
 button:hover {
   opacity: .5;
-  /* transition: all ease-in-out 20s; */
 }
 
 body {
   font-size: 18px;
   max-width: 1440px;
-  background-color: ;
-  /* position: relative; */
 }
 
 header {
   margin: 2em 6em 6em 6em;
+  /* width: 85%; */
+}
+
+header i {
+  display: none;
 }
 
 header .logo {
@@ -35,8 +37,8 @@ header .logo {
 
 header .logo2 {
   display: flex;
-  align-items: center;
   gap: 3em;
+  align-items: center;
 }
 
 header nav ul {
@@ -64,7 +66,11 @@ header .login {
   gap: 2em;
 }
 
-header p {
+header .login p:hover {
+  color: hsl(260, 8%, 14%);
+}
+
+header .login p {
   color: hsl(257, 7%, 63%);
   cursor: pointer;
 }
@@ -103,8 +109,7 @@ header .intro p {
 }
 
 header .intro img {
-  /* width: 100%; */
-
+  min-width: 150px;
 }
 
 header .intro button {
@@ -189,7 +194,7 @@ header .intro button {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
-  max-width: 400px;
+  min-width: 350px;
   line-height: 1.4;
 }
 
@@ -205,15 +210,12 @@ header .intro button {
   margin-top: 2.5em;
   color: hsl(257, 27%, 26%);
   margin-bottom: 1em;
+  font-weight: 800;
 }
 
 .statistics p {
   color: hsl(257, 7%, 63%);
   /* font-size: 16px; */
-}
-
-.statistics hr {
-
 }
 
 .statistics .adverts .two {
@@ -288,10 +290,104 @@ footer .socials ul a {
 }
 
 footer .socials ul li a :hover {
-  background-color: hsl(180, 66%, 49%);
-  /* border-radius: 50%; */
-
-  /* background-color: red; */
 }
 
+@media screen and (max-width: 800px) {
+  .statistics .adverts .brand {
+    /* min-width: 200px; */
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  header {
+    margin: 0;
+    padding: 40px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header .login {
+    display: none;
+  }
+
+  header i {
+    margin-bottom: 10px;
+  }
+
+  header .intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .intro img {
+    width: 90%;
+  }
+
+  header .intro h1 {
+    margin-top: 1em;
+  }
+
+  .statistics .intro {
+    margin-bottom: 2em;
+  }
+
+  .statistics .brand {
+    margin-top: 1.4em;
+  }
+
+  .statistics .adverts {
+    flex-direction: column;
+  }
+
+  .statistics .brand h4, p {
+    text-align: center;
+  }
+
+  .statistics .adverts .one {
+  }
+
+  .statistics img {
+    left: 40%;
+  }
+
+  .shorten {
+    margin-top: em;
+    right: 5%;
+  }
+
+  .shorten button {
+    place-content: center;
+  }
+
+  .shorten button {
+    min-width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+
+  footer .logo {
+    margin-bottom: 2em;
+  }
+
+  footer .logo2 {
+    margin-bottom: 1em;
+  }
+
+  footer .nav-link {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  footer .socials ul {
+    text-align: center;
+    place-content: center;
+  }
+}
 
